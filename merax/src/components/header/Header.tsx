@@ -11,7 +11,7 @@ export default function Header({}: Props) {
         <img src={logo} alt="" />
       </div>
       <div className="">
-        <p></p>
+        <p className=''>+998(90) 429-90-19</p>
         <img src={phoneIcon} alt="" />
         <button>Bepul konsultatsiya</button>
       </div>
