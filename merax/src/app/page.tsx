@@ -1,6 +1,7 @@
 import AkademiyInfo from "@/components/main/AkademiyInfo";
 import Banner from "@/components/main/Banner";
 import Courses from "@/components/main/Courses/Courses";
+import GetInfo from "@/components/main/GetInfo";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
         <Banner/>
         <AkademiyInfo/>
         <Courses/>
+        <GetInfo/>
     </div>
   );
 }
