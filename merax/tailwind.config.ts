@@ -15,6 +15,7 @@ const config: Config = {
       },
       colors:{
         mainColor: "#01BD80",
+        textColor: "#444444",
       }
     },
   },
