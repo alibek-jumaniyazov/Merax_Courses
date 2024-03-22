@@ -34,8 +34,8 @@ export default function Footer({}: Props) {
         <div className="w-full flex justify-between items-center border-b border-[#DEDEDE] pb-12 ">
           <Image src={logo} alt="" />
           <div className="flex gap-4 ">
-            {footerIcons.map((item: Ticon) => (
-              <a className="bg-mainColor p-2 w-8 h-8 rounded-full flex justify-center items-center" href={item.url}>
+            {footerIcons.map((item , index) => (
+              <a className="bg-mainColor p-2 w-8 h-8 rounded-full flex justify-center items-center" href={item.url} key={index}>
                 <Image src={item.image} alt="" className="w-5 h-5" />
               </a>
             ))}

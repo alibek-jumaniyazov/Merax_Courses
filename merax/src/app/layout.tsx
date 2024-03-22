@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="py-10 px-24 flex flex-col justify-center items-start gap-14">
+      <body className="py-10 px-24 flex flex-col justify-center items-start gap-14 bg-[#FCFCFC]">
         <Header />
           <div className="container w-[1440px] my-0 mx-auto ">
             {children}
