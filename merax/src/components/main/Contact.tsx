@@ -1,5 +1,4 @@
 import React from 'react'
-import IMask from 'imask';
 
 type Props = {}
 
