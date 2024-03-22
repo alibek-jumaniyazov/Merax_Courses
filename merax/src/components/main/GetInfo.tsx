@@ -12,7 +12,7 @@ export default function GetInfo({}: Props) {
           tanlov qilishga yordam beramiz
         </span>
       </div>
-      <div className="flex justify-center items-center bg-mainColor rounded-xl active:scale-75 transition-all duration-300">
+      <div className="w-[228px] flex justify-center items-center bg-mainColor rounded-xl active:scale-75 transition-all duration-300">
         <button className="px-4 py-3 font-bold text-lg text-white">
           Maslahat olish
         </button>

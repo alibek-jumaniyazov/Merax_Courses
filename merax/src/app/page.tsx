@@ -1,3 +1,4 @@
+import Advantages from "@/components/main/Advantages";
 import AkademiyInfo from "@/components/main/AkademiyInfo";
 import Banner from "@/components/main/Banner";
 import Courses from "@/components/main/Courses/Courses";
@@ -10,6 +11,7 @@ export default function Home() {
         <AkademiyInfo/>
         <Courses/>
         <GetInfo/>
+        <Advantages/>
     </div>
   );
 }
