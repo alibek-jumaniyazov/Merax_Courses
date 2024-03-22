@@ -1,4 +1,5 @@
 import React from 'react'
+import IMask from 'imask';
 
 type Props = {}
 
@@ -11,7 +12,6 @@ export default function Contact({}: Props) {
         </div>
         <div className="">
             <input type="text" placeholder='Ismingizni kiriting'/>
-            <InputMask type="tel" name="tel" id="phone" mask="(99) 999-99-99" placeholder="Telefon Raqamingiz" value={formData.tel} onChange={inputValue}></InputMask>
             <button>Yuborish</button>
         </div>
     </div>
