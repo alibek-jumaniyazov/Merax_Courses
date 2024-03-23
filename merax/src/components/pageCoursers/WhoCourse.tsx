@@ -16,7 +16,7 @@ export default function WhoCourse({ item }: Props) {
           <span className="w-[90%] font-medium text-textColor text-xl">{item.info}</span>
         </div>
       </div>
-      <div className="w-[40%]">
+      <div className="w-[42%]">
         <Image src={item.image} alt="" className="w-full rounded-2xl"/>
       </div>
     

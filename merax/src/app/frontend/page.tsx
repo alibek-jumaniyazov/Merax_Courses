@@ -121,11 +121,9 @@ export default function Page({}: Props) {
 
   return (
     <div className="">
-        {
-            courseBanner.map((item) => (
-                <CourseBanner item={item}/>
-            ))
-        }
+      {courseBanner.map((item) => (
+        <CourseBanner item={item} />
+      ))}
       {courseHeadInfo.map((item, index) => (
         <CourseDate key={index} item={item} />
       ))}
