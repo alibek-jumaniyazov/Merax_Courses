@@ -1,35 +1,38 @@
 "use client"
+import React, { useState } from "react";
+import Banner from "@/components/main/Banner";
 import ContactCourse from "@/components/frontend/ContactCourse";
 import CourseDate from "@/components/frontend/CourseDate";
 import CourseInfo from "@/components/frontend/CourseInfo";
 import CourseTeach from "@/components/frontend/CourseTeach";
-import Banner from "@/components/main/Banner";
-import React, { useState } from "react";
 
 type Props = {};
 
 export type TInfo = {
-    til: string;
-    date: string;
-    hard: string;
-    create: string;
-  };
+  til: string;
+  date: string;
+  hard: string;
+  create: string;
+};
 
-  export type TContact = {
-    title:string;
-    desc:string;
-  };
-  export type TTeach = {
-    name:string;
-    projects:string;
-  };
-  export type TCourseInfo = {
-    id: number;
-    info: string;
-  };
-export default function page({}: Props) {
+export type TContact = {
+  title: string;
+  desc: string;
+};
+export type TTeach = {
+  name: string;
+  projects: string;
+};
+export type TCourseInfoItem = {
+  id: number;
+  info: string;
+};
+export type TCourseInfo = {
+  after: TCourseInfoItem[];
+  before: TCourseInfoItem[];
+};
 
-
+export default function Page({}: Props) {
   const [courseHeadInfo, setCourseHeadInfo] = useState<TInfo[]>([
     {
       til: "O’zbek",
@@ -39,68 +42,69 @@ export default function page({}: Props) {
     },
   ]);
 
-  const [contactInfo , setContactInfo] = useState<TContact[]>([
+  const [contactInfo, setContactInfo] = useState<TContact[]>([
     {
-        title:"Kurs haqida batafsil ma'lumot olishni xohlaysizmi?",
-        desc:"Agar sizda format haqida savollaringiz bo'lsa yoki nimani tanlashni bilmasangiz, raqamingizni qoldiring va operatorlarimiz sizga qayta qo'ng'iroq qilishadi."
-    }
-  ])
-
-  const [courseTeach , setCourseTeach] = useState<TTeach[]>([
-    {
-        name:"Alisherov Sadulla",
-        projects:"E-ses, Gameshop, Darital-oil, Appx.group sayti, Renta, Eureka, Edu-action va boshqalar."
-    }
-  ])
-
-
-
-  const [courseInfo, SetCourseInfo] = useState<TCourseInfo[]>([
-    {
-        id:1,
-        info:"Dasturlashga oid ma’lum bir ko’nikmalar, algoritmlar, dasturlash va uning mashhur yo’nalishlari bo'yicha tushuncha"
-    },
-    {
-        id:2,
-        info:"HTML, CSS, SASS  "
-    },
-    {
-        id:3,
-        info:"Javascript,Git bilan ishlash, Build Tools, Algoritmlar, DOM bilan ishlash  "
-    },
-    {
-        id:4,
-        info:"React js, Redux, Material UI, Axios bilan ishlash, Vercelga deploy qilish, Real loihalar bilan ishlash"
-    },
-    {
-        id:4,
-        info:"React.js advanced,  Next.js ( Page router va App router), Typescript, Prisma bilan API yozish, Tailwindcss, Real loyihalar bilan ishlash."
-    },
-    {
-        id:4,
-        info:"Kurs oxirida tajriba o’tash uchun labaratoriya"
+      title: "Kurs haqida batafsil ma'lumot olishni xohlaysizmi?",
+      desc: "Agar sizda format haqida savollaringiz bo'lsa yoki nimani tanlashni bilmasangiz, raqamingizni qoldiring va operatorlarimiz sizga qayta qo'ng'iroq qilishadi.",
     },
   ]);
+
+  const [courseTeach, setCourseTeach] = useState<TTeach[]>([
+    {
+      name: "Alisherov Sadulla",
+      projects:
+        "E-ses, Gameshop, Darital-oil, Appx.group sayti, Renta, Eureka, Edu-action va boshqalar.",
+    },
+  ]);
+
+  const [courseInfo, setCourseInfo] = useState<TCourseInfo>({
+    after: [
+      {
+        id: 1,
+        info:
+          "Dasturlashga oid ma’lum bir ko’nikmalar, algoritmlar, dasturlash va uning mashhur yo’nalishlari bo'yicha tushuncha",
+      },
+      {
+        id: 2,
+        info: "HTML, CSS, SASS",
+      },
+      {
+        id: 3,
+        info: "Javascript, Git bilan ishlash, Build Tools, Algoritmlar, DOM bilan ishlash",
+      },
+      {
+        id: 4,
+        info:
+          "React js, Redux, Material UI, Axios bilan ishlash, Vercelga deploy qilish, Real loihalar bilan ishlash",
+      },
+      {
+        id: 5,
+        info:
+          "React.js advanced, Next.js (Page router va App router), Typescript, Prisma bilan API yozish, Tailwindcss, Real loyihalar bilan ishlash.",
+      },
+    ],
+    before: [
+      {
+        id: 6,
+        info:
+          "Loyihani mukammal rejalashtirish, File architecture sozlash, Loyihalarni deploy qilish, Serverga joylash, Animatsiyalar yaratish va ular bilan ishlash, Verstka qilish, Har qanday qiyinchilikdagi website larning frontend qismini qila olish, O'rganishni o'rganish. Portfolio uchun Pet Projectlarga ega bo'lasiz.",
+      },
+    ],
+  });
 
   return (
     <div className="">
       <Banner />
-      {
-        courseHeadInfo.map((item) => (
-            <CourseDate item={item}/>
-        ))
-      }
-        <CourseInfo courseInfo={courseInfo}/>
-        {
-            courseTeach.map((item) => (
-                <CourseTeach item={item}/>
-            ))
-        }
-      {
-        contactInfo.map((item) => (
-            <ContactCourse item={item}/>
-        ))
-      }
+      {courseHeadInfo.map((item, index) => (
+        <CourseDate key={index} item={item} />
+      ))}
+      <CourseInfo courseInfo={courseInfo} />
+      {courseTeach.map((item, index) => (
+        <CourseTeach key={index} item={item} />
+      ))}
+      {contactInfo.map((item, index) => (
+        <ContactCourse key={index} item={item} />
+      ))}
     </div>
   );
 }
