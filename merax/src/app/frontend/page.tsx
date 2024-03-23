@@ -8,6 +8,7 @@ import whoImg from "../../assets/images/frontendImg.png";
 import bannerOne from "../../assets/images/bannerOne.png";
 import WhoCourse from "@/components/pageCoursers/WhoCourse";
 import CourseBanner from "@/components/pageCoursers/CourseBanner";
+import CourseFits from "@/components/pageCoursers/CourseFits";
 type Props = {};
 
 export type TBanner = {
@@ -38,6 +39,15 @@ export type TCourseInfoItem = {
 export type TCourseInfo = {
   after: TCourseInfoItem[];
   before: TCourseInfoItem[];
+};
+
+export type TCourseTFitsItem = {
+  title: string;
+  info: string;
+};
+export type TFits = {
+  one: TCourseTFitsItem[];
+  tow: TCourseTFitsItem[];
 };
 export type TWho = {
   image: any;
@@ -119,6 +129,21 @@ export default function Page({}: Props) {
     ],
   });
 
+  const [courseFits, setCourseFits] = useState<TFits>({
+    one: [
+      {
+        title: "Front-End sohasiga yangi kelganlar",
+        info: "Dasturlash bo'yicha bilimga ega bo'lmagan har bir kishi Front-End sohasiga osongina o'rganishi mumkin.",
+      },
+    ],
+    tow: [
+      {
+        title: "Junior Front-End chilar (Tajriba to’plash uchun)",
+        info: "Ushbu sohada asosiy bilimlarga ega bo'lgan dastruchilar o'z bilimlarini mustahkamlash orqali yuqori darajaga ko'tarilishlari mumkin",
+      },
+    ],
+  });
+
   return (
     <div className="">
       {courseBanner.map((item) => (
@@ -130,6 +155,7 @@ export default function Page({}: Props) {
       {courseWho.map((item, index) => (
         <WhoCourse key={index} item={item} />
       ))}
+      <CourseFits courseFits={courseFits} />
       <CourseInfo courseInfo={courseInfo} />
       {courseTeach.map((item, index) => (
         <CourseTeach key={index} item={item} />
