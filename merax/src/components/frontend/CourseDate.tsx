@@ -23,7 +23,7 @@ export default function CourseDate({ item }: Props) {
       </div>
       <div className="bg-[#D9D9D9] w-28 h-[1px]"></div>
       <div className="flex flex-col justify-center items-start gap-1">
-        <p className="font-medium text-2xl text-textColor">Murakkablik</p>
+        <p className="font-medium text-2xl text-textColor">Dars</p>
         <span className="font-semibold text-3xl text-mainColor">
           {item.hard}
         </span>

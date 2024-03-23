@@ -33,9 +33,9 @@ export default function page({}: Props) {
   const [courseHeadInfo, setCourseHeadInfo] = useState<TInfo[]>([
     {
       til: "O’zbek",
-      date: "5 oy",
-      hard: "Boshlang'ich",
-      create: "Portolio",
+      date: "10 oy",
+      hard: "3 soat",
+      create: "Web Sahia",
     },
   ]);
 
