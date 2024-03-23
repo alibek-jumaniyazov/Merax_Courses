@@ -19,7 +19,7 @@ export default function WhoCourse({ item }: Props) {
       <div className="w-[40%]">
         <Image src={item.image} alt="" className="w-full rounded-2xl"/>
       </div>
-     
+    
     </div>
   );
 }
