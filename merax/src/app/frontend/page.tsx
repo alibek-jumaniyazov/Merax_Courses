@@ -1,11 +1,12 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import Banner from "@/components/main/Banner";
 import ContactCourse from "@/components/frontend/ContactCourse";
 import CourseDate from "@/components/frontend/CourseDate";
 import CourseInfo from "@/components/frontend/CourseInfo";
 import CourseTeach from "@/components/frontend/CourseTeach";
-
+import whoImg from '../../assets/images/frontendImg.png'
+import WhoCourse from "@/components/frontend/WhoCourse";
 type Props = {};
 
 export type TInfo = {
@@ -30,6 +31,12 @@ export type TCourseInfoItem = {
 export type TCourseInfo = {
   after: TCourseInfoItem[];
   before: TCourseInfoItem[];
+};
+export type TWho = {
+  image: any;
+  title: string;
+  text: string;
+  info: string;
 };
 
 export default function Page({}: Props) {
@@ -57,12 +64,20 @@ export default function Page({}: Props) {
     },
   ]);
 
+  const [courseWho, setCourseWho] = useState<TWho[]>([
+    {
+      image: whoImg,
+      title: "Frontend dasturchi kim?",
+      text: "Frontend dasturchilar – sayt va dasturlarning tashqi qismiga javobgar mutaxassislardir.",
+      info: "Frontend dasturchilar saytning yuzini ishlab chiqishadi, ya'ni siz internet tarmoqlarida ko'radigan har qanday dizaynlar ular tomonidan dasturlangan.",
+    },
+  ]);
+
   const [courseInfo, setCourseInfo] = useState<TCourseInfo>({
     after: [
       {
         id: 1,
-        info:
-          "Dasturlashga oid ma’lum bir ko’nikmalar, algoritmlar, dasturlash va uning mashhur yo’nalishlari bo'yicha tushuncha",
+        info: "Dasturlashga oid ma’lum bir ko’nikmalar, algoritmlar, dasturlash va uning mashhur yo’nalishlari bo'yicha tushuncha",
       },
       {
         id: 2,
@@ -74,20 +89,17 @@ export default function Page({}: Props) {
       },
       {
         id: 4,
-        info:
-          "React js, Redux, Material UI, Axios bilan ishlash, Vercelga deploy qilish, Real loihalar bilan ishlash",
+        info: "React js, Redux, Material UI, Axios bilan ishlash, Vercelga deploy qilish, Real loihalar bilan ishlash",
       },
       {
         id: 5,
-        info:
-          "React.js advanced, Next.js (Page router va App router), Typescript, Prisma bilan API yozish, Tailwindcss, Real loyihalar bilan ishlash.",
+        info: "React.js advanced, Next.js (Page router va App router), Typescript, Prisma bilan API yozish, Tailwindcss, Real loyihalar bilan ishlash.",
       },
     ],
     before: [
       {
         id: 6,
-        info:
-          "Loyihani mukammal rejalashtirish, File architecture sozlash, Loyihalarni deploy qilish, Serverga joylash, Animatsiyalar yaratish va ular bilan ishlash, Verstka qilish, Har qanday qiyinchilikdagi website larning frontend qismini qila olish, O'rganishni o'rganish. Portfolio uchun Pet Projectlarga ega bo'lasiz.",
+        info: "Loyihani mukammal rejalashtirish, File architecture sozlash, Loyihalarni deploy qilish, Serverga joylash, Animatsiyalar yaratish va ular bilan ishlash, Verstka qilish, Har qanday qiyinchilikdagi website larning frontend qismini qila olish, O'rganishni o'rganish. Portfolio uchun Pet Projectlarga ega bo'lasiz.",
       },
     ],
   });
@@ -97,6 +109,9 @@ export default function Page({}: Props) {
       <Banner />
       {courseHeadInfo.map((item, index) => (
         <CourseDate key={index} item={item} />
+      ))}
+       {courseWho.map((item, index) => (
+        <WhoCourse key={index} item={item} />
       ))}
       <CourseInfo courseInfo={courseInfo} />
       {courseTeach.map((item, index) => (
