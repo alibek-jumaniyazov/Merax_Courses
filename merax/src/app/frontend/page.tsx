@@ -1,12 +1,12 @@
 "use client";
 import React, { useState } from "react";
 import Banner from "@/components/main/Banner";
-import ContactCourse from "@/components/frontend/ContactCourse";
-import CourseDate from "@/components/frontend/CourseDate";
-import CourseInfo from "@/components/frontend/CourseInfo";
-import CourseTeach from "@/components/frontend/CourseTeach";
+import ContactCourse from "@/components/pageCoursers/ContactCourse";
+import CourseDate from "@/components/pageCoursers/CourseDate";
+import CourseInfo from "@/components/pageCoursers/CourseInfo";
+import CourseTeach from "@/components/pageCoursers/CourseTeach";
 import whoImg from '../../assets/images/frontendImg.png'
-import WhoCourse from "@/components/frontend/WhoCourse";
+import WhoCourse from "@/components/pageCoursers/WhoCourse";
 type Props = {};
 
 export type TInfo = {
