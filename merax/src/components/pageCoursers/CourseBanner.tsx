@@ -16,9 +16,11 @@ export default function CourseBanner({item}: Props) {
         {item.info}
 
         </span>
-        <button className="bg-mainColor px-8 py-4 text-white text-lg font-bold rounded-lg mt-4">
+        <div className="flex justify-center items-center bg-mainColor rounded-xl active:scale-75 transition-all duration-300  mt-4">
+        <button className="px-8 py-4 text-white text-lg font-bold ">
           Ariza qoldiring
         </button>
+        </div>
       </div>
 
       <div className="absolute w-full h-full top-0 left-0 bg-[#00000066] z-10">
