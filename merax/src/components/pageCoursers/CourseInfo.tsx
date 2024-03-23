@@ -30,14 +30,14 @@ export default function CourseInfo({ courseInfo }: Props) {
           </p>
           <div className="flex flex-col justify-center items-start gap-7">
             {courseInfo.before.map((item: any) => (
-              <div
+              <ul
                 className="flex justify-center items-center gap-5 mt-4"
                 key={item.id}
               >
-                <p className=" font-medium text-textColor text-xl">
+                <li className=" font-medium text-textColor text-xl list-disc ml-8">
                   {item.info}
-                </p>
-              </div>
+                </li>
+              </ul>
             ))}
           </div>
         </div>

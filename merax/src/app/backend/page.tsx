@@ -59,8 +59,8 @@ export type TWho = {
 export default function Page({}: Props) {
   const [courseBanner, setCourseBanner] = useState<TBanner[]>([
     {
-      title: "Front-End",
-      info: "Jahon darajasidagi foydalanuvchi interfeysini yaratish va Front-End sohasida muvaffaqiyatli martaba qilishni o'rganing",
+      title: "Backend",
+      info: "Jahon darajasidagi foydalanuvchi interfeysini yaratish va Backend sohasida muvaffaqiyatli martaba qilishni o'rganing",
       img: bannerOne,
     },
   ]);
@@ -68,9 +68,9 @@ export default function Page({}: Props) {
   const [courseHeadInfo, setCourseHeadInfo] = useState<TInfo[]>([
     {
       til: "O’zbek",
-      date: "10 oy",
+      date: "8 oy",
       hard: "3 soat",
-      create: "Web Sahia",
+      create: "Server",
     },
   ]);
 
@@ -83,9 +83,9 @@ export default function Page({}: Props) {
 
   const [courseTeach, setCourseTeach] = useState<TTeach[]>([
     {
-      name: "Alisherov Sadulla",
+      name: "Anvar Aliyev",
       projects:
-        "E-ses, Gameshop, Darital-oil, Appx.group sayti, Renta, Eureka, Edu-action va boshqalar.",
+        " E-ses, Renta, Eureka, Exams.uz, QR-serve, Bekomix telegram bot va boshqalar.",
     },
   ]);
 
@@ -106,25 +106,34 @@ export default function Page({}: Props) {
       },
       {
         id: 2,
-        info: "HTML, CSS, SASS",
+        info: "Javascript, Git",
       },
       {
         id: 3,
-        info: "Javascript, Git bilan ishlash, Build Tools, Algoritmlar, DOM bilan ishlash",
+        info: "Node.js, Express, MySQL + Knex.js, MongoDB/Postgres",
       },
       {
         id: 4,
-        info: "React js, Redux, Material UI, Axios bilan ishlash, Vercelga deploy qilish, Real loihalar bilan ishlash",
+        info: "Nest.js, Typeorm, Typescript, Telegram Bot API, System design, Architecture, Microservice (RabbitMQ)",
       },
-      {
-        id: 5,
-        info: "React.js advanced, Next.js (Page router va App router), Typescript, Prisma bilan API yozish, Tailwindcss, Real loyihalar bilan ishlash.",
-      },
+
     ],
     before: [
       {
-        id: 6,
-        info: "Loyihani mukammal rejalashtirish, File architecture sozlash, Loyihalarni deploy qilish, Serverga joylash, Animatsiyalar yaratish va ular bilan ishlash, Verstka qilish, Har qanday qiyinchilikdagi website larning frontend qismini qila olish, O'rganishni o'rganish. Portfolio uchun Pet Projectlarga ega bo'lasiz.",
+        id:1 ,
+        info: "Node.js ning Express va Nest.js frameworklaridan foydalangan holda har xil ilova, web-saytlarning backend qismini, REST API 0 dan qurish, rivojlantirish va optimallashtirish,",
+      },
+      {
+        id:2 ,
+        info: "SQL va NoSQL ma'lumotlar bazalari bilan ishlash, ya'ni MongoDB va MySQL ma'lumotlar bazalaridan, tegishli ma'lumotlarni modellashtirish texnikasi va so'rovlarni optimallashtirish strategiyalaridan foydalangan holda ma'lumotlarni samarali saqlash va olish",
+      },
+      {
+        id:3 ,
+        info: "O'rgangan texnologiyalari yordamida murakkab biznes logika CRM va ERP tizimlarini qura olish.",
+      },
+      {
+        id:4 ,
+        info: "Kamida 3 ta real projekt",
       },
     ],
   });
