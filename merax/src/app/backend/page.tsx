@@ -10,6 +10,7 @@ import bannerImg from "../../assets/images/bannerTow.png";
 import WhoCourse from "@/components/pageCoursers/WhoCourse";
 import CourseBanner from "@/components/pageCoursers/CourseBanner";
 import CourseFits from "@/components/pageCoursers/CourseFits";
+import CourseCertificate from "@/components/pageCoursers/CourseCertificate";
 type Props = {};
 
 export type TBanner = {
@@ -171,7 +172,7 @@ export default function Page({}: Props) {
       {courseTeach.map((item, index) => (
         <CourseTeach key={index} item={item} />
       ))}
-
+      <CourseCertificate />
       {contactInfo.map((item, index) => (
         <ContactCourse key={index} item={item} />
       ))}
