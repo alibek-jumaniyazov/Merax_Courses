@@ -5,6 +5,7 @@ import CourseDate from "@/components/pageCoursers/CourseDate";
 import CourseInfo from "@/components/pageCoursers/CourseInfo";
 import CourseTeach from "@/components/pageCoursers/CourseTeach";
 import whoImg from "../../assets/images/frontendImg.png";
+import backendTeach from "../../assets/images/backendTeach.png";
 import bannerImg from "../../assets/images/bannerTow.png";
 import WhoCourse from "@/components/pageCoursers/WhoCourse";
 import CourseBanner from "@/components/pageCoursers/CourseBanner";
@@ -31,6 +32,7 @@ export type TContact = {
 export type TTeach = {
   name: string;
   projects: string;
+  img: any;
 };
 export type TCourseInfoItem = {
   id: number;
@@ -86,6 +88,7 @@ export default function Page({}: Props) {
       name: "Anvar Aliyev",
       projects:
         " E-ses, Renta, Eureka, Exams.uz, QR-serve, Bekomix telegram bot va boshqalar.",
+      img: backendTeach,
     },
   ]);
 

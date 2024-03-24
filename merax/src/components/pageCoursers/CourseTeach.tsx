@@ -1,4 +1,5 @@
 import { TTeach } from "@/app/frontend/page";
+import Image from "next/image";
 import React from "react";
 
 type Props = {
@@ -16,8 +17,8 @@ export default function CourseTeach({item}: Props) {
         <span className="font-semibold text-xl text-white">Qilgan loyihalari:</span>
         <span className="font-medium text-sm text-white">{item.projects}</span>
       </div>
-      <div className="w-52 h-52 rounded-full bg-white">
-        <img src="" alt="" />
+      <div className="w-52 h-52 rounded-full bg-white overflow-hidden">
+        <Image src={item.img} alt="" className="w-full -translate-y-6"/>
       </div>
     </div>
   );

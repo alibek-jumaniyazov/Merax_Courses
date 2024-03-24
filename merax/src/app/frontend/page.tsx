@@ -6,6 +6,7 @@ import CourseInfo from "@/components/pageCoursers/CourseInfo";
 import CourseTeach from "@/components/pageCoursers/CourseTeach";
 import whoImg from "../../assets/images/frontendImg.png";
 import bannerImg from "../../assets/images/bannerOne.png";
+import frontendTeach from "../../assets/images/frontendTeach.png";
 import WhoCourse from "@/components/pageCoursers/WhoCourse";
 import CourseBanner from "@/components/pageCoursers/CourseBanner";
 import CourseFits from "@/components/pageCoursers/CourseFits";
@@ -31,6 +32,7 @@ export type TContact = {
 export type TTeach = {
   name: string;
   projects: string;
+  img: any;
 };
 export type TCourseInfoItem = {
   id: number;
@@ -86,6 +88,7 @@ export default function Page({}: Props) {
       name: "Alisherov Sadulla",
       projects:
         "E-ses, Gameshop, Darital-oil, Appx.group sayti, Renta, Eureka, Edu-action va boshqalar.",
+      img: frontendTeach,
     },
   ]);
 
