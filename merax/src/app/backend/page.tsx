@@ -5,7 +5,7 @@ import CourseDate from "@/components/pageCoursers/CourseDate";
 import CourseInfo from "@/components/pageCoursers/CourseInfo";
 import CourseTeach from "@/components/pageCoursers/CourseTeach";
 import whoImg from "../../assets/images/frontendImg.png";
-import bannerOne from "../../assets/images/bannerOne.png";
+import bannerImg from "../../assets/images/bannerTow.png";
 import WhoCourse from "@/components/pageCoursers/WhoCourse";
 import CourseBanner from "@/components/pageCoursers/CourseBanner";
 import CourseFits from "@/components/pageCoursers/CourseFits";
@@ -60,8 +60,8 @@ export default function Page({}: Props) {
   const [courseBanner, setCourseBanner] = useState<TBanner[]>([
     {
       title: "Backend",
-      info: "Jahon darajasidagi foydalanuvchi interfeysini yaratish va Backend sohasida muvaffaqiyatli martaba qilishni o'rganing",
-      img: bannerOne,
+      info: "Jahon darajasidagi ma'lumotlar bazasini  yaratish va Backend sohasida muvaffaqiyatli martaba qilishni o'rganing",
+      img: bannerImg,
     },
   ]);
 
@@ -92,9 +92,9 @@ export default function Page({}: Props) {
   const [courseWho, setCourseWho] = useState<TWho[]>([
     {
       image: whoImg,
-      title: "Frontend dasturchi kim?",
-      text: "Frontend dasturchilar – sayt va dasturlarning tashqi qismiga javobgar mutaxassislardir.",
-      info: "Frontend dasturchilar saytning yuzini ishlab chiqishadi, ya'ni siz internet tarmoqlarida ko'radigan har qanday dizaynlar ular tomonidan dasturlangan.",
+      title: "Backend dasturchi kim?",
+      text: "Backend dasturchilar – sayt va dasturlarning ichki qismiga javobgar mutaxassislardir.",
+      info: "Backend dasturchilar saytning ichki ma'lumotlarini bazasini ishlab chiqishadi, ya'ni siz internet tarmoqlarida ko'radigan har qanday malumot backendchilar tomonidan dasturlangan.",
     },
   ]);
 
@@ -116,23 +116,22 @@ export default function Page({}: Props) {
         id: 4,
         info: "Nest.js, Typeorm, Typescript, Telegram Bot API, System design, Architecture, Microservice (RabbitMQ)",
       },
-
     ],
     before: [
       {
-        id:1 ,
+        id: 1,
         info: "Node.js ning Express va Nest.js frameworklaridan foydalangan holda har xil ilova, web-saytlarning backend qismini, REST API 0 dan qurish, rivojlantirish va optimallashtirish,",
       },
       {
-        id:2 ,
+        id: 2,
         info: "SQL va NoSQL ma'lumotlar bazalari bilan ishlash, ya'ni MongoDB va MySQL ma'lumotlar bazalaridan, tegishli ma'lumotlarni modellashtirish texnikasi va so'rovlarni optimallashtirish strategiyalaridan foydalangan holda ma'lumotlarni samarali saqlash va olish",
       },
       {
-        id:3 ,
+        id: 3,
         info: "O'rgangan texnologiyalari yordamida murakkab biznes logika CRM va ERP tizimlarini qura olish.",
       },
       {
-        id:4 ,
+        id: 4,
         info: "Kamida 3 ta real projekt",
       },
     ],
@@ -141,13 +140,13 @@ export default function Page({}: Props) {
   const [courseFits, setCourseFits] = useState<TFits>({
     one: [
       {
-        title: "Front-End sohasiga yangi kelganlar",
-        info: "Dasturlash bo'yicha bilimga ega bo'lmagan har bir kishi Front-End sohasiga osongina o'rganishi mumkin.",
+        title: "Backend sohasiga yangi kelganlar",
+        info: "Dasturlash bo'yicha bilimga ega bo'lmagan har bir kishi Backend sohasiga osongina o'rganishi mumkin.",
       },
     ],
     tow: [
       {
-        title: "Junior Front-End chilar (Tajriba to’plash uchun)",
+        title: "Junior Backend chilar (Tajriba to’plash uchun)",
         info: "Ushbu sohada asosiy bilimlarga ega bo'lgan dastruchilar o'z bilimlarini mustahkamlash orqali yuqori darajaga ko'tarilishlari mumkin",
       },
     ],

@@ -5,7 +5,7 @@ import CourseDate from "@/components/pageCoursers/CourseDate";
 import CourseInfo from "@/components/pageCoursers/CourseInfo";
 import CourseTeach from "@/components/pageCoursers/CourseTeach";
 import whoImg from "../../assets/images/frontendImg.png";
-import bannerOne from "../../assets/images/bannerOne.png";
+import bannerImg from "../../assets/images/bannerOne.png";
 import WhoCourse from "@/components/pageCoursers/WhoCourse";
 import CourseBanner from "@/components/pageCoursers/CourseBanner";
 import CourseFits from "@/components/pageCoursers/CourseFits";
@@ -61,7 +61,7 @@ export default function Page({}: Props) {
     {
       title: "Front-End",
       info: "Jahon darajasidagi foydalanuvchi interfeysini yaratish va Front-End sohasida muvaffaqiyatli martaba qilishni o'rganing",
-      img: bannerOne,
+      img: bannerImg,
     },
   ]);
 

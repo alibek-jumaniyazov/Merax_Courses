@@ -24,7 +24,7 @@ export default function CourseBanner({item}: Props) {
       </div>
 
       <div className="absolute w-full h-full top-0 left-0 bg-[#00000066] z-10">
-        <Image src={item.img} alt="" className="z-0 w-full h-full" />
+        <Image src={item.img} alt="" className="z-0 w-full h-full " />
       </div>
     </div>
   );
