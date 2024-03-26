@@ -1,4 +1,4 @@
-import { TInfo } from "@/app/frontend/page";
+import { TInfo } from "@/context/FrontendInfoTypes";
 import React from "react";
 
 type Props = {

@@ -1,6 +1,6 @@
+import { TBanner } from "@/context/FrontendInfoTypes";
 import Image from "next/image";
 import React from "react";
-import { TBanner } from "@/app/frontend/page";
 type Props = {
     item:TBanner;
 };
