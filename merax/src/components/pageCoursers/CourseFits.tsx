@@ -1,4 +1,3 @@
-import { TFits } from "@/app/frontend/page";
 import React from "react";
 
 type Props = {

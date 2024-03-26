@@ -26,7 +26,7 @@ export default function Contact({}: Props) {
 
   const BotYuborish = async () => {
     const apiToken = "7178943806:AAFevetMdSkPeNJk_jU6IzJSRFaYnBIbrko";
-    const chatId = "2119173106 ";
+    const chatId = "2119173106" || "-1001923251544";
 
     const message = `
       Ism Familya: ${formData.name}

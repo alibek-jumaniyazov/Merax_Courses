@@ -1,4 +1,4 @@
-import { TWho } from "@/app/frontend/page";
+import { TWho } from "@/context/FrontendInfoTypes";
 import Image from "next/image";
 import React from "react";
 
