@@ -7,24 +7,22 @@ import Footer from "@/components/footer/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Merax Courses",
-  description: "",
+    title: "Merax Courses",
+    description: "",
 };
 
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body className="py-10 px-24 flex flex-col justify-center items-start gap-14 bg-[#FCFCFC]">
-        <Header />
-          <div className="container w-[1440px] my-0 mx-auto ">
-            {children}
-          </div>
-        <Footer />
-      </body>
-    </html>
-  );
+    return (
+        <html lang="en">
+            <body className="py-10  flex flex-col justify-center items-start gap-14 bg-[#FCFCFC]">
+                <Header />
+                {children}
+                <Footer />
+            </body>
+        </html>
+    );
 }

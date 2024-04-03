@@ -31,9 +31,9 @@ export default function Advantages({}: Props) {
   ]);
 
   return (
-    <div className="Advantages w-full flex justify-between items-center mt-40 mainFont">
-      <div className="flex flex-col justify-center items-start gap-10">
-        <p className="font-semibold text-3xl text-textColor mb-2">Bizda o'qishning afzalliklari</p>
+    <div className="Advantages w-full flex justify-between items-center mt-40 mainFont bg-backgroundColor rounded-[20px]">
+      <div className="flex flex-col justify-center items-start gap-10 p-9">
+        <p className="font-semibold text-3xl text-textColor mb-2">Bizda o&apos;qishning afzalliklari</p>
         <div className="flex flex-col justify-center items-start gap-7">
             {
                 advantages.map((item) => (

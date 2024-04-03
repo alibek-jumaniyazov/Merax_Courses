@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
-import { TContact } from "@/context/FrontendInfoTypes";
+import { TContact } from "@/context/PagesInfoTypes/PagesInfoTypes";
 
 type Props = {
   item: TContact;

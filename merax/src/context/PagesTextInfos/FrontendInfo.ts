@@ -1,4 +1,3 @@
-import { useState } from "react";
 import {
     TBanner,
     TContact,
@@ -7,17 +6,17 @@ import {
     TInfo,
     TTeach,
     TWho,
-} from "./FrontendInfoTypes";
-import whoImg from "../assets/images/frontendImg.png";
-import bannerImg from "../assets/images/bannerOne.png";
-import frontendTeach from "../assets/images/frontendTeach.png";
+} from "../PagesInfoTypes/PagesInfoTypes";
+import whoImg from "../../assets/images/frontendImg.png";
+import bannerImg from "../../assets/images/bannerOne.png";
+import frontendTeach from "../../assets/images/frontendTeach.png";
 
 const courseHeadInfo: TInfo[] = [
     {
         til: "O’zbek",
         date: "10 oy",
         hard: "3 soat",
-        create: "Web Sahia",
+        create: "Web Sahia yaratish",
     },
 ];
 
@@ -87,6 +86,7 @@ const courseBanner: TBanner[] = [
     {
         title: "Front-End",
         info: "Jahon darajasidagi foydalanuvchi interfeysini yaratish va Front-End sohasida muvaffaqiyatli martaba qilishni o'rganing",
+        blur: "sm",
         img: bannerImg,
     },
 ];

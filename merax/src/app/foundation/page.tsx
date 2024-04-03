@@ -7,7 +7,6 @@ import CourseTeach from "@/components/pageCoursers/CourseTeach";
 import WhoCourse from "@/components/pageCoursers/WhoCourse";
 import CourseBanner from "@/components/pageCoursers/CourseBanner";
 import CourseFits from "@/components/pageCoursers/CourseFits";
-import CourseCertificate from "@/components/pageCoursers/CourseCertificate";
 import {
   contactInfo,
   courseBanner,
@@ -15,8 +14,8 @@ import {
   courseHeadInfo,
   courseInfo,
   courseTeach,
-  courseWho,
-} from "@/context/PagesTextInfos/FrontendInfo";
+  // courseWho,
+} from "@/context/PagesTextInfos/FoundationInfo";
 import CourseRequired from "@/components/pageCoursers/CourseRequired";
 
 type Props = {};
@@ -24,15 +23,15 @@ type Props = {};
 export default function Page({}: Props) {
   return (
     <div className="w-[1440px] my-0 mx-auto ">
-      {courseBanner.map((item , index) => (
-        <CourseBanner item={item} key={index}/>
+      {courseBanner.map((item, index) => (
+        <CourseBanner item={item} key={index} />
       ))}
       {courseHeadInfo.map((item, index) => (
         <CourseDate key={index} item={item} />
       ))}
-      {courseWho.map((item, index) => (
+      {/* {courseWho.map((item, index) => (
         <WhoCourse key={index} item={item} />
-      ))}
+      ))} */}
       <CourseInfo courseInfo={courseInfo} />
       <CourseFits courseFits={courseFits} />
       {courseTeach.map((item, index) => (

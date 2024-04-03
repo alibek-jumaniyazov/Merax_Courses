@@ -9,7 +9,7 @@ export type Tinfo = {
     description: string;
 };
 
-export default function AkademiyInfo({}: Props) {
+export default function AcademiyInfo({}: Props) {
     const [info, setInfo] = useState<Tinfo[]>([
         {
             title: "Katta loyihalarda tajribaga ega bo'lgan mentorlar ",
@@ -29,9 +29,9 @@ export default function AkademiyInfo({}: Props) {
     ]);
 
     return (
-        <div className="AkademiyInfo w-full flex  flex-col justify-center items-center gap-32 mt-24 mainFont">
+        <div className="AkademiyInfo w-full flex  flex-col justify-center items-center gap-12 mt-24 mainFont bg-color">
             <p className="colorGradient font-bold text-4xl leading-10 p-4">
-                Nega aynan biz?{" "}
+                Nega aynan biz?
             </p>
             <div className="w-full flex justify-center items-center gap-5">
                 {info.map((item, index) => (

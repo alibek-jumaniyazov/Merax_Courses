@@ -16,7 +16,7 @@ import {
   courseInfo,
   courseTeach,
   courseWho,
-} from "@/context/PagesTextInfos/FrontendInfo";
+} from "@/context/PagesTextInfos/GrafikDizaynInfo";
 import CourseRequired from "@/components/pageCoursers/CourseRequired";
 
 type Props = {};

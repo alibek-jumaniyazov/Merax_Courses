@@ -46,7 +46,7 @@ export default function Courses({}: Props) {
             title: "Grafik Dizayn",
             description:
                 "ijtimoiy tarmoqlar uchun posterlar, flyerlar, etiketka, bannerlarni ishlash",
-            url: "gafikdizayn",
+            url: "grafik-dizayn",
             icon: courseIcon2,
         },
         {
@@ -54,17 +54,17 @@ export default function Courses({}: Props) {
             title: "IT English",
             description:
                 "har qanday foydalanuvchi interfeyslarini foydalanishga qulay qilish",
-            url: "itenglish",
+            url: "it-english",
             icon: courseIcon3,
         },
     ]);
 
     return (
-        <div className="Courses w-full flex flex-col justify-center items-center gap-32 mt-24 mainFont">
+        <div className="Courses w-full flex flex-col justify-center items-center gap-12  mt-24  mainFont ">
             <p className="colorGradient font-bold text-4xl leading-10 p-4">
                 O’z sohangizni tanlang
             </p>
-            <div className="w-full flex justify-center items-center gap-5 flex-wrap">
+            <div className="w-full flex justify-center items-center gap-5 flex-wrap py-12 bg-[#EDF8F5]">
                 {course.map((item) => (
                     <CourseCard item={item} key={item.id} />
                 ))}

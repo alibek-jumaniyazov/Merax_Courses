@@ -32,6 +32,7 @@ export type TWho = {
 export type TBanner = {
     title: string;
     info: string;
+    blur:string,
     img: any;
 };
 

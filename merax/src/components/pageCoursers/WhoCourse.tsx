@@ -1,4 +1,4 @@
-import { TWho } from "@/context/FrontendInfoTypes";
+import { TWho } from "@/context/PagesInfoTypes/PagesInfoTypes";
 import Image from "next/image";
 import React from "react";
 

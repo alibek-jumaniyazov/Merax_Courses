@@ -58,12 +58,12 @@ export default function Contact({}: Props) {
           Yana savollaringiz qoldimi?
         </p>
         <span className=" w-[698px] font-medium text-xl text-[#979797] leading-8">
-          Agar sizda format haqida savollaringiz bo'lsa yoki nimani tanlashni
+          Agar sizda format haqida savollaringiz bo&apos;lsa yoki nimani tanlashni
           bilmasangiz, raqamingizni qoldiring va operatorlarimiz sizga qayta
-          qo'ng'iroq qilishadi.
+          qo&apos;ng&apos;iroq qilishadi.
         </span>
       </div>
-      <div className="flex flex-col justify-center items-start bg-[#ebeaea] gap-6 rounded-3xl py-10 px-12">
+      <div className="flex flex-col justify-center items-start bg-backgroundColor gap-6 rounded-3xl py-10 px-12">
         <input
           type="text"
           name="name"

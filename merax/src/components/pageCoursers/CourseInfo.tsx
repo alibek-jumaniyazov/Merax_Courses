@@ -9,7 +9,7 @@ export default function CourseInfo({ courseInfo }: Props) {
     <div className="Advantages w-full flex justify-between items-center mt-40 mainFont">
       <div className="flex flex-col justify-center items-start gap-10">
         <p className="font-semibold text-3xl text-textColor mb-2 ">
-          Kursda nimalarni o'rganasiz?
+          Kursda nimalarni o&apos;rganasiz?
         </p>
         <div className="flex flex-col justify-center items-start gap-7">
           {courseInfo.after.map((item: any) => (
@@ -26,7 +26,7 @@ export default function CourseInfo({ courseInfo }: Props) {
         </div>
         <div className="flex flex-col justify-center items-start gap-4 mt-4" >
           <p className="font-semibold text-3xl text-mainColor">
-            Kurs so'ngida:
+            Kurs so&apos;ngida:
           </p>
           <div className="flex flex-col justify-center items-start gap-7">
             {courseInfo.before.map((item: any) => (

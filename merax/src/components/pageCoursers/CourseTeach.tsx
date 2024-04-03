@@ -1,4 +1,4 @@
-import { TTeach } from "@/context/FrontendInfoTypes";
+import { TTeach } from "@/context/PagesInfoTypes/PagesInfoTypes";
 import Image from "next/image";
 import React from "react";
 

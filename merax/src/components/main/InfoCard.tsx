@@ -1,5 +1,5 @@
 import React from "react";
-import { Tinfo } from "./AkademiyInfo";
+import { Tinfo } from "./AcademiyInfo";
 
 type Props = {
     item: Tinfo;
