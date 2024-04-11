@@ -1,16 +1,14 @@
 "use client";
 import React, { useState } from "react";
 import InfoCard from "./InfoCard";
+import { TAcademyInfo } from "@/context/PagesInfoTypes/PagesInfoTypes";
 
 type Props = {};
 
-export type Tinfo = {
-    title: string;
-    description: string;
-};
+
 
 export default function AcademiyInfo({}: Props) {
-    const [info, setInfo] = useState<Tinfo[]>([
+    const [info, setInfo] = useState<TAcademyInfo[]>([
         {
             title: "Katta loyihalarda tajribaga ega bo'lgan mentorlar ",
             description:

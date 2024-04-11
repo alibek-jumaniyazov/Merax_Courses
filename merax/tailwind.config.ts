@@ -16,6 +16,7 @@ const config: Config = {
       colors:{
         mainColor: "#01BD80",
         textColor: "#444444",
+        backgroundColor: "#F0F0F0"
       }
     },
   },

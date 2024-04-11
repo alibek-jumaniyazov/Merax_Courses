@@ -10,8 +10,8 @@ export default function GetInfo({}: Props) {
                     Kasb tanlashda qiyanlyapsizmi?
                 </p>
                 <span className=" w-[695px] font-medium text-lg leading-7 text-[#979797]">
-                    Bepul maslahat olish uchun so&apos;rov qoldiring va biz sizga
-                    to&apos;g&apos;ri tanlov qilishga yordam beramiz
+                    Bepul maslahat olish uchun so&apos;rov qoldiring va biz
+                    sizga to&apos;g&apos;ri tanlov qilishga yordam beramiz
                 </span>
             </div>
             <div className="w-[228px] flex justify-center items-center bg-mainColor rounded-xl active:scale-75 transition-all duration-300 cursor-pointer">

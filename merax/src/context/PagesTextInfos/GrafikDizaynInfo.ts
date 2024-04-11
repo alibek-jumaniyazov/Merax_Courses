@@ -1,4 +1,3 @@
-
 import {
     TBanner,
     TContact,
@@ -83,7 +82,7 @@ const courseBanner: TBanner[] = [
     {
         title: "Grafik-Dizayner",
         info: "Jahon darajasidagi interfeysini yaratish va Grafik-Dizayner sohasida muvaffaqiyatli martaba qilishni o'rganing",
-        blur:"sm",
+        blur: 4,
         img: bannerImg,
     },
 ];

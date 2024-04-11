@@ -86,7 +86,7 @@ const courseBanner: TBanner[] = [
     {
         title: "Front-End",
         info: "Jahon darajasidagi foydalanuvchi interfeysini yaratish va Front-End sohasida muvaffaqiyatli martaba qilishni o'rganing",
-        blur: "sm",
+        blur: 4,
         img: bannerImg,
     },
 ];

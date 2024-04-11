@@ -5,9 +5,7 @@ import {
     TFits,
     TInfo,
     TTeach,
-    TWho,
 } from "../PagesInfoTypes/PagesInfoTypes";
-import whoImg from "../../assets/images/frontendImg.png";
 import bannerImg from "../../assets/images/bannerThree.jpg";
 import frontendTeach from "../../assets/images/frontendTeach.png";
 
@@ -98,15 +96,6 @@ const courseInfo: TCourseInfo = {
     ],
 };
 
-// const courseWho: TWho[] = [
-//     {
-//         image: whoImg,
-//         title: "Frontend dasturchi kim?",
-//         text: "Frontend dasturchilar – sayt va dasturlarning tashqi qismiga javobgar mutaxassislardir.",
-//         info: "Frontend dasturchilar saytning yuzini ishlab chiqishadi, ya'ni siz internet tarmoqlarida ko'radigan har qanday dizaynlar ular tomonidan dasturlangan.",
-//     },
-// ];
-
 const courseFits: TFits = {
     one: [
         {
@@ -126,7 +115,7 @@ const courseBanner: TBanner[] = [
     {
         title: "Foundation",
         info: "Dasturlash boyicha boshlang'ich bilimlari va kampyuterda samarali ishlashni organing",
-        blur: "sm",
+        blur: 4,
         img: bannerImg,
     },
 ];
@@ -143,7 +132,6 @@ export {
     courseHeadInfo,
     courseFits,
     courseInfo,
-    // courseWho,
     courseBanner,
     contactInfo,
     courseTeach,

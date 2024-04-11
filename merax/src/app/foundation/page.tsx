@@ -1,10 +1,9 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import ContactCourse from "@/components/pageCoursers/ContactCourse";
 import CourseDate from "@/components/pageCoursers/CourseDate";
 import CourseInfo from "@/components/pageCoursers/CourseInfo";
 import CourseTeach from "@/components/pageCoursers/CourseTeach";
-import WhoCourse from "@/components/pageCoursers/WhoCourse";
 import CourseBanner from "@/components/pageCoursers/CourseBanner";
 import CourseFits from "@/components/pageCoursers/CourseFits";
 import {
@@ -14,7 +13,6 @@ import {
   courseHeadInfo,
   courseInfo,
   courseTeach,
-  // courseWho,
 } from "@/context/PagesTextInfos/FoundationInfo";
 import CourseRequired from "@/components/pageCoursers/CourseRequired";
 
@@ -29,9 +27,6 @@ export default function Page({}: Props) {
       {courseHeadInfo.map((item, index) => (
         <CourseDate key={index} item={item} />
       ))}
-      {/* {courseWho.map((item, index) => (
-        <WhoCourse key={index} item={item} />
-      ))} */}
       <CourseInfo courseInfo={courseInfo} />
       <CourseFits courseFits={courseFits} />
       {courseTeach.map((item, index) => (

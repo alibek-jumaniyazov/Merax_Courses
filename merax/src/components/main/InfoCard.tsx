@@ -1,8 +1,8 @@
+import { TAcademyInfo } from "@/context/PagesInfoTypes/PagesInfoTypes";
 import React from "react";
-import { Tinfo } from "./AcademiyInfo";
 
 type Props = {
-    item: Tinfo;
+    item: TAcademyInfo;
 };
 
 export default function InfoCard({ item }: Props) {

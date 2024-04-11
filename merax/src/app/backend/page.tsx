@@ -7,7 +7,6 @@ import CourseTeach from "@/components/pageCoursers/CourseTeach";
 import WhoCourse from "@/components/pageCoursers/WhoCourse";
 import CourseBanner from "@/components/pageCoursers/CourseBanner";
 import CourseFits from "@/components/pageCoursers/CourseFits";
-import CourseCertificate from "@/components/pageCoursers/CourseCertificate";
 import {
   contactInfo,
   courseBanner,

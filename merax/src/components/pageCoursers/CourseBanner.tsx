@@ -1,6 +1,7 @@
 import { TBanner } from "@/context/PagesInfoTypes/PagesInfoTypes";
 import Image from "next/image";
 import React from "react";
+
 type Props = {
     item: TBanner;
 };
@@ -23,7 +24,7 @@ export default function CourseBanner({ item }: Props) {
             </div>
 
             <div
-                className={`absolute w-full h-full top-0 left-0 bg-[#00000066] z-10 blur-${item.blur}`}
+                className={`absolute w-full h-full top-0 left-0 bg-[#00000066] z-10 blur-sm`}
             >
                 <Image src={item.img} alt="" className="z-0 w-full h-full " />
             </div>

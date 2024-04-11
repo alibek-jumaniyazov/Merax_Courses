@@ -1,30 +1,24 @@
 "use client";
 import React, { useState } from "react";
-import logo from "../../assets/icons/logo.svg";
-import youtubeIcon from "../../assets/icons/youtubeIcon.svg";
-import telegramIcon from "../../assets/icons/telegramIcon.svg";
-import instagramIcon from "../../assets/icons/instagramIcon.svg";
-import Image from "next/image";
 import Link from "next/link";
+import { Icons } from "@/assets/icons/icons";
+import { Ticon } from "@/context/PagesInfoTypes/PagesInfoTypes";
 type Props = {};
 
 export default function Footer({}: Props) {
-  type Ticon = {
-    image: any;
-    url: string;
-  };
+
 
   const [footerIcons, setFooterIcons] = useState<Ticon[]>([
     {
-      image: youtubeIcon,
+      image: <Icons.youtube/>,
       url: "",
     },
     {
-      image: telegramIcon,
+      image: <Icons.telegramIcon/>,
       url: "",
     },
     {
-      image: instagramIcon,
+      image: <Icons.instagramIcon/>,
       url: "",
     },
   ]);
@@ -34,7 +28,7 @@ export default function Footer({}: Props) {
       <div className="w-[1440px] flex flex-col justify-center items-start">
         <div className="w-full flex justify-between items-center border-b border-[#DEDEDE] pb-12 ">
           <Link href="/">
-            <Image src={logo} alt="" />
+            <Icons.logo/>
           </Link>
           <div className="flex gap-4 ">
             {footerIcons.map((item, index) => (
@@ -43,7 +37,7 @@ export default function Footer({}: Props) {
                 href={item.url}
                 key={index}
               >
-                <Image src={item.image} alt="" className="w-5 h-5" />
+                {item.image}
               </a>
             ))}
           </div>

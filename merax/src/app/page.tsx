@@ -3,7 +3,7 @@ import Banner from "@/components/main/Banner";
 import Contact from "@/components/main/Contact";
 import Courses from "@/components/main/Courses/Courses";
 import GetInfo from "@/components/main/GetInfo";
-import AcademiyInfo from "@/components/main/AcademiyInfo";
+import AcademiyInfo from "@/components/main/AcademyInfo";
 
 export default function Home() {
   return (

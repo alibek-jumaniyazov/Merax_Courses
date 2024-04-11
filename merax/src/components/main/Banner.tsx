@@ -4,8 +4,8 @@ import infoImg from "../../assets/images/infoImg.png";
 import lines from "../../assets/images/lines.png";
 import topWhite from "../../assets/images/topWhite.png";
 import bottomWhite from "../../assets/images/bottomWhite.png";
-import topBannerIcons from "../../assets/icons/topBannerIcons.svg";
-import textInfo from "../../assets/icons/textInfo.svg";
+import { Icons } from "@/assets/icons/icons";
+
 type Props = {};
 
 export default function Banner({}: Props) {
@@ -25,13 +25,17 @@ export default function Banner({}: Props) {
       <div className="relative h-full flex justify-center items-center">
         <Image src={topWhite} alt="" className="absolute top-0 left-32   z-0" />
         <Image src={infoImg} alt="" />
-        <Image src={bottomWhite} alt="" className="absolute bottom-0 left-32 z-0"/>
+        <Image
+          src={bottomWhite}
+          alt=""
+          className="absolute bottom-0 left-32 z-0"
+        />
       </div>
       <div className="">
         <Image src={lines} alt="" className="absolute top-0 left-0 z-0" />
-        <Image src={topBannerIcons} alt=""className="absolute bottom-0 right-4 z-0" />
-        <Image src={textInfo} alt="" className="absolute top-14 right-4 z-0" />
-        <Image src={textInfo} alt="" className="absolute top-14 right-4 z-0" />
+        <Icons.topBannerIcons />
+        <Icons.textInfo />
+        <Icons.textInfo />
       </div>
     </div>
   );

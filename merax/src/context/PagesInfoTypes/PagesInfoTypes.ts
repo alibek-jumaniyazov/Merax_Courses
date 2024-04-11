@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export type TInfo = {
     til: string;
     date: string;
@@ -23,7 +25,7 @@ export type TFits = {
     tow: TCourseTFitsItem[];
 };
 export type TWho = {
-    image: any;
+    image: StaticImageData;
     title: string;
     text: string;
     info: string;
@@ -32,8 +34,8 @@ export type TWho = {
 export type TBanner = {
     title: string;
     info: string;
-    blur:string,
-    img: any;
+    blur: number;
+    img: StaticImageData;
 };
 
 export type TContact = {
@@ -43,5 +45,40 @@ export type TContact = {
 export type TTeach = {
     name: string;
     projects: string;
-    img: any;
+    img: StaticImageData;
+};
+
+
+// No Pages Info type . Components Types
+
+export type TAdvantages = {
+    id: number;
+    info: string;
+};
+export type Ticon = {
+    image: any;
+    url: string;
+  };
+
+  export type TCourse = {
+    id: number;
+    title: string;
+    description: string;
+    url: string;
+    icon: any;
+};
+
+export type TAcademyInfo = {
+    title: string;
+    description: string;
+};
+
+export type TForm = {
+    name: string;
+    tel: string;
+};
+export type Tequired = {
+    image: any;
+    title: string;
+    info: string;
 };
