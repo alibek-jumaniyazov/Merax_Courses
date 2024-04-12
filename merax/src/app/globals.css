@@ -35,3 +35,9 @@
 .courseCard {
     width: calc(1400px / 3);
 }
+
+@media (max-width: 1536px) { 
+    .courseCard {
+        width: calc(1200px / 3);
+    }   
+}

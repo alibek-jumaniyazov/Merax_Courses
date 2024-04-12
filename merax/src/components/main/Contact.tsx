@@ -53,7 +53,7 @@ export default function Contact({}: Props) {
     };
     return (
         <div className="Contact w-full flex justify-between items-center mt-40 mb-40 mainFont">
-            <div className="w-[673px] h-full flex flex-col justify-between items-start ">
+            <div className="w-[673px] h-full flex flex-col justify-between items-start gap-7">
                 <p className="font-semibold text-5xl text-textColor">
                     Yana savollaringiz qoldimi?
                 </p>

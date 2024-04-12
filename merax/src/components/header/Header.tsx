@@ -7,7 +7,7 @@ type Props = {};
 export default function Header({}: Props) {
   return (
     <div className="Header mainFont w-full flex justify-center items-center">
-      <div className="w-[1440px] flex justify-between items-center ">
+      <div className="2xl:w-[1440px] w-[1240px]  flex justify-between items-center ">
         <div className="">
           <Link href="/">
             <Icons.logo />

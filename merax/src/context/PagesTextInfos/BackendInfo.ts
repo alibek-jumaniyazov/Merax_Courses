@@ -94,7 +94,7 @@ const courseBanner: TBanner[] = [
     {
         title: "Backend",
         info: "Jahon darajasidagi ma'lumotlar bazasini  yaratish va Backend sohasida muvaffaqiyatli martaba qilishni o'rganing",
-        blur: "",
+        blur:0,
         img: bannerImg,
     },
 ];

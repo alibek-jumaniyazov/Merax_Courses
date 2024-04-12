@@ -25,7 +25,7 @@ export default function Footer({}: Props) {
 
   return (
     <div className="Footer mainFont w-full flex justify-center items-center mainFont">
-      <div className="w-[1440px] flex flex-col justify-center items-start">
+      <div className="2xl:w-[1440px] w-[1240px] flex flex-col justify-center items-start">
         <div className="w-full flex justify-between items-center border-b border-[#DEDEDE] pb-12 ">
           <Link href="/">
             <Icons.logo/>

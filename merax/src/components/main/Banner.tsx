@@ -10,7 +10,7 @@ type Props = {};
 
 export default function Banner({}: Props) {
   return (
-    <div className="Banner w-full h-[481px] bg-gradient-to-r from-[#01BD80] to-[#39E1AB] rounded-2xl flex justify-start items-center gap-[5%] pl-12 pr-12 relative overflow-hidden">
+    <div className="Banner w-full h-[481px] bg-gradient-to-r from-[#01BD80] to-[#39E1AB] rounded-2xl flex justify-start items-center 2xl:gap-[5%] pl-12 pr-12 relative overflow-hidden">
       <div className="flex flex-col justify-center items-start gap-3 z-10">
         <p className="font-semibold text-textColor text-5xl w-[530px] leading-[69px]">
           Amaliyot va nazariya asosida yuksalish
@@ -33,9 +33,14 @@ export default function Banner({}: Props) {
       </div>
       <div className="">
         <Image src={lines} alt="" className="absolute top-0 left-0 z-0" />
-        <Icons.topBannerIcons />
-        <Icons.textInfo />
-        <Icons.textInfo />
+        <div className="">
+          <div className="absolute bottom-4 right-12 z-0">
+            <Icons.topBannerIcons />
+          </div>
+          <div className="absolute top-20 2xl:right-12 right-3 z-0">
+            <Icons.textInfo />
+          </div>
+        </div>
       </div>
     </div>
   );
