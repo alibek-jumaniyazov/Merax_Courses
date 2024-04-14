@@ -1,4 +1,5 @@
 import { Icons } from "@/assets/icons/icons";
+import Link from "next/link";
 import React from "react";
 
 type Props = {};
@@ -16,11 +17,13 @@ export default function GetInfo({}: Props) {
             to&apos;g&apos;ri tanlov qilishga yordam beramiz
           </span>
         </div>
-        <div className="w-[228px] flex justify-center items-center bg-mainColor rounded-xl active:scale-75 transition-all duration-300 cursor-pointer">
-          <button className="px-4 py-3 font-bold text-lg text-white">
-            Maslahat olish
-          </button>
-        </div>
+        <Link href="https://t.me/merax_admin">
+          <div className="w-[228px] flex justify-center items-center bg-mainColor rounded-xl active:scale-75 transition-all duration-300 cursor-pointer">
+            <button className="px-4 py-3 font-bold text-lg text-white">
+              Maslahat olish
+            </button>
+          </div>
+        </Link>
       </div>
       <div className="">
         <Icons.bgQuest width={400}/>
