@@ -23,8 +23,8 @@ type Props = {};
 export default function Page({}: Props) {
   return (
     <div className="2xl:w-[1440px] w-[1240px] my-0 mx-auto ">
-      {courseBanner.map((item , index) => (
-        <CourseBanner item={item} key={index}/>
+      {courseBanner.map((item, index) => (
+        <CourseBanner item={item} key={index} />
       ))}
       {courseHeadInfo.map((item, index) => (
         <CourseDate key={index} item={item} />

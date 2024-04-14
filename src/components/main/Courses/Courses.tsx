@@ -7,13 +7,12 @@ import { TCourse } from "@/context/PagesInfoTypes/PagesInfoTypes";
 type Props = {};
 
 export default function Courses({}: Props) {
-    
   const [course, setCourse] = useState<TCourse[]>([
     {
       id: 1,
       title: "Frontend - React",
       description:
-        "foydalanuvchiga ko’rinadigan sahifalarni, dashboardlarni yasash imkonini beradi",
+        "foydalanuvchiga ko’rinadigan sahifalarni yasash imkonini beradi",
       url: "frontend",
       icon: <Icons.courseIcon1 />,
     },
@@ -44,7 +43,7 @@ export default function Courses({}: Props) {
       id: 5,
       title: "IT English",
       description:
-        "har qanday foydalanuvchi interfeyslarini foydalanishga qulay qilish",
+        "it bo'yicha ingliz tili so'zlar va meetinglarda ravon gaprish",
       url: "it-english",
       icon: <Icons.courseIcon3 />,
     },

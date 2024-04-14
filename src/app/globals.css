@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.borderColor {
+  border: 2px solid transparent;
+  border-radius: 20px;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(
+        90deg,
+        rgba(74, 193, 155, 0.5) 1.91%,
+        rgba(8, 0, 92, 0.242188) 52.49%,
+        rgba(10, 176, 122, 0.405) 100%
+      )
+      border-box;
+}
+
+.colorGradient {
+  background: linear-gradient(
+    90deg,
+    #01bd80 1.91%,
+    rgba(0, 92, 62, 0.484375) 52.49%,
+    rgba(14, 89, 121, 0.81) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.courseCard {
+  width: calc(1400px / 3);
+}
+
+@media (max-width: 1536px) {
+  .courseCard {
+    width: calc(1200px / 3);
+  }
+}

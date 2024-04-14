@@ -5,6 +5,7 @@ import lines from "../../assets/images/lines.png";
 import topWhite from "../../assets/images/topWhite.png";
 import bottomWhite from "../../assets/images/bottomWhite.png";
 import { Icons } from "@/assets/icons/icons";
+import Link from "next/link";
 
 type Props = {};
 
@@ -18,9 +19,11 @@ export default function Banner({}: Props) {
         <span className="font-medium text-2xl text-[#4D4D4D]">
           Xalqaro IT mutaxassislarini yetishtirish
         </span>
-        <button className="bg-textColor px-8 py-4 text-mainColor text-lg font-bold rounded-lg mt-4">
-          Ariza qoldiring
-        </button>
+        <Link href="#contact">
+          <button className="bg-textColor px-8 py-4 text-mainColor text-lg font-bold rounded-lg mt-4 active:scale-75 transition-all duration-300">
+            Ariza qoldiring
+          </button>
+        </Link>
       </div>
       <div className="relative h-full flex justify-center items-center">
         <Image src={topWhite} alt="" className="absolute top-0 left-32   z-0" />
