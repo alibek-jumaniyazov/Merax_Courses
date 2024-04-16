@@ -46,6 +46,7 @@ export default function Contact({}: Props) {
         );
 
         setFormData({ name: "", tel: "+998 " });
+        toast.success('Muvofaqiyatli yuborildi')
       }
     } catch (error) {
       console.error("Error sending message to Telegram:", error);

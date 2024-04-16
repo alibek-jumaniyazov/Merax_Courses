@@ -42,7 +42,7 @@ export default function ContactCourse({ item }: Props) {
             text: message,
           }
         );
-
+        toast.success('Muvofaqiyatli yuborildi')
         setFormData({ name: "", tel: "+998 " });
       }
     } catch (error) {

@@ -26,7 +26,7 @@ export default function Header({}: Props) {
               <Icons.phoneIcon />
             </div>
           </div>
-          <Link href="https://t.me/merax_admin">
+          <Link href="https://t.me/merax_admin" target="_blank">
             <div className="flex justify-center items-center bg-mainColor rounded-xl active:scale-75 transition-all duration-300">
               <button className="px-4 py-3 font-bold text-lg text-white">
                 Bepul konsultatsiya
